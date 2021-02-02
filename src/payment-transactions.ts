@@ -38,15 +38,5 @@ csv()
     })   
 })
 
-
-// What happens if you deposit 5, withdraw 5, dispute your deposit and then chargback the deposit? - now your total is -5
-// Should you be able to dispute deposits?
-// Should you be able to chargeback deposits?
-// How do you unlock your account?
-// Can you still file a dispute if your account is locked?
-// Can you still resolve disputes if your account is locked?
-// Can you chargeback with a locked account?
-
-
 //todo - fix decimals to 4 places
 //     - allow csv file as arg
