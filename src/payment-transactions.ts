@@ -46,3 +46,7 @@ csv()
 // Can you still file a dispute if your account is locked?
 // Can you still resolve disputes if your account is locked?
 // Can you chargeback with a locked account?
+
+
+//todo - fix decimals to 4 places
+//     - allow csv file as arg
