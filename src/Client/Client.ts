@@ -46,9 +46,9 @@ export class Client {
     public formatOutput(): ClientOutput {
         return {
             client: this.clientId,
-            available: this.available,
+            available: parseFloat(this.available.toFixed(4)),
             held: this.held,
-            total: this.total,
+            total: parseFloat(this.total.toFixed(4)),
             locked: this.locked
         }
     }
