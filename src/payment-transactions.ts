@@ -38,5 +38,3 @@ csv()
         console.log(csv)
     })   
 })
-
-//todo - fix decimals to 4 places
