@@ -1,15 +1,12 @@
 # payment-engine
 
 Get started:
-
     `npm i` to install required packages
 
 Run program:
-
     `cd src` then `ts-node payment-transactions.ts + "path to csv file"` to run 
 
 Run test:
-
     `cd src` then `npm test Client.spec.ts` to run test suite
 
 Edge cases/questions/comments: 

@@ -1,9 +1,11 @@
 import jsonexport from "jsonexport/dist"
 import csv from 'csvtojson'
-const csvFilePath = '../example-input.csv'
-
 import { Client, ClientOutput } from './Client/Client'
 import { Transaction} from './interfaces/Transaction'
+
+const args = process.argv.slice(2)
+const csvFilePath = args[0]
+
 
 let clients: Array<Client> = []
 
