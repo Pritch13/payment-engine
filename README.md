@@ -1,5 +1,9 @@
 # payment-engine
 
+     A Typescript payment processing engine which takes in a CSV of transactions, updates individual client
+     accounts, handles disputes, chargebacks and resolutions, and then outputs the state of client accounts as
+     a CSV.
+
 Get started:
     `npm i` to install required packages
 

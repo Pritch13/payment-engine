@@ -8,7 +8,7 @@ export interface ClientOutput {
     locked: boolean
 }
 
-export class Client {
+export class ClientAccount {
 
     clientId: string
     total: number = 0

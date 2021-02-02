@@ -1,7 +1,7 @@
-import { Client } from './Client'
+import { ClientAccount } from './ClientAccount'
 
 describe('Client', ()=> {
-    let client: Client
+    let client: ClientAccount
     const firstTransaction = {
         type: 'deposit',
         client: '1',
@@ -11,7 +11,7 @@ describe('Client', ()=> {
     }
 
     beforeEach(() => {
-        client = new Client(firstTransaction)
+        client = new ClientAccount(firstTransaction)
     })
 
     describe('handleTransaction', () => {

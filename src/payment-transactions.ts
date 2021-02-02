@@ -1,18 +1,18 @@
 import jsonexport from "jsonexport/dist"
 import csv from 'csvtojson'
-import { Client, ClientOutput } from './Client/Client'
+import { ClientAccount, ClientOutput } from './ClientAccount/ClientAccount'
 import { Transaction} from './interfaces/Transaction'
 
 const args = process.argv.slice(2)
 const csvFilePath = args[0]
 
-let clients: Array<Client> = []
+let clients: Array<ClientAccount> = []
 
 function getClient(transaction: Transaction) {
     const foundClient = clients.find(client => client.clientId === transaction.client)
     if(foundClient) return foundClient
 
-    const newClient =  new Client(transaction)
+    const newClient =  new ClientAccount(transaction)
     clients.push(newClient)
     return newClient
 }
