@@ -21,7 +21,7 @@ export class ClientAccount {
         this.clientId = transaction.client
     }
 
-    public handleTransaction(transaction: Transaction) {
+    public handleTransaction(transaction: Transaction): void {
         if(transaction.type === 'deposit') {
             this.depositFunds(transaction)
         }
@@ -71,7 +71,7 @@ export class ClientAccount {
         this.updateAvailableAmount()
     }
 
-    public disputeTransaction(transaction: Transaction) {
+    public disputeTransaction(transaction: Transaction): void {
         const foundTransactionToDispute = this.transactions.find(trans => trans.tx === transaction.tx)
 
         if(!foundTransactionToDispute) return
@@ -81,7 +81,7 @@ export class ClientAccount {
         this.updateAvailableAmount()
     }
 
-    public resolveTransaction(transaction: Transaction) {
+    public resolveTransaction(transaction: Transaction): void {
         const foundTransactionToResolve = this.transactions.find(trans => trans.tx === transaction.tx && trans.underDispute === true)
 
         if(!foundTransactionToResolve) return
@@ -91,7 +91,7 @@ export class ClientAccount {
         this.updateAvailableAmount()
     }
 
-    public chargeback(transaction: Transaction) {
+    public chargeback(transaction: Transaction): void {
         const foundTransactionToChargeback = this.transactions.find(trans => trans.tx === transaction.tx && trans.underDispute === true)
 
         if(!foundTransactionToChargeback) return
