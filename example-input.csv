@@ -1,5 +1,13 @@
 type,client,tx,amount
-deposit,1,1,10.3333
-deposit,1,2,35.4234
-
-
+deposit,1,1,5.42
+deposit,2,2,10.12
+deposit,3,3,1.18
+deposit,4,4,0.51
+withdrawal,1,5,2.22
+withdrawal,2,6,6.89
+withdrawal,3,7,0.22
+withdrawal,4,8,0.11
+dispute,1,5
+dispute,2,6
+resolve,1,5
+chargeback,2,6
