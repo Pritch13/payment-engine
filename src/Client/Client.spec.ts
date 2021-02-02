@@ -58,13 +58,13 @@ describe('Client', ()=> {
 
     describe('depositFunds', () => {
         it('should deposit funds, update total and available amount, save the transaction', () => {
-            client.total = 1.64
+            client.total = 35.4234
 
             const newTransaction = {
                 type: 'deposit',
                 client: '1',
                 tx: '2',
-                amount: '1.95'
+                amount: '10.3333'
             }
 
             const spy = jest.spyOn(client, 'updateAvailableAmount')
@@ -72,7 +72,7 @@ describe('Client', ()=> {
             client.depositFunds(newTransaction)
 
             expect(spy).toHaveBeenCalled()
-            expect(client.total).toBe(3.59)
+            expect(client.total).toBe(45.7567)
             expect(client.transactions).toContain(newTransaction)
         })
     })

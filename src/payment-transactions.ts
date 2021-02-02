@@ -6,7 +6,6 @@ import { Transaction} from './interfaces/Transaction'
 const args = process.argv.slice(2)
 const csvFilePath = args[0]
 
-
 let clients: Array<Client> = []
 
 function getClient(transaction: Transaction) {
@@ -41,4 +40,3 @@ csv()
 })
 
 //todo - fix decimals to 4 places
-//     - allow csv file as arg

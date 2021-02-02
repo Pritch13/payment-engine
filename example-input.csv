@@ -1,5 +1,5 @@
 type,client,tx,amount
-deposit,1,1,5
-deposit,2,2,10
-deposit,3,3,50
+deposit,1,1,10.3333
+deposit,1,2,35.4234
+
 
