@@ -8,7 +8,7 @@ Run program:
      (The root folder contains an example-input csv file to use)
 
 Run test:
-    `cd src` then `npm test Client.spec.ts` to run test suite
+    `npm test` to run test suite
 
 Edge cases/questions/comments: 
 
