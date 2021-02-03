@@ -54,6 +54,8 @@ export class ClientAccount {
     }
 
     public depositFunds(transaction: Transaction): void {
+        if(!transaction.amount) return
+
         const depositedAmount = parseFloat(transaction.amount!)
 
         this.total = this.total + depositedAmount
@@ -62,6 +64,8 @@ export class ClientAccount {
     }
 
     public withdrawFunds(transaction: Transaction): void {
+        if(!transaction.amount) return
+        
         const amountToWithDraw = parseFloat(transaction.amount!)
 
         if(this.total - amountToWithDraw < 0) return

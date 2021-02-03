@@ -1,6 +1,6 @@
 import { ClientAccount } from './ClientAccount'
 
-describe('Client', ()=> {
+describe('Client Account', ()=> {
     let client: ClientAccount
     const firstTransaction = {
         type: 'deposit',
